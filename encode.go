@@ -266,7 +266,7 @@ func fieldInfo(f reflect.StructField) (k string, oe bool) {
 	}
 
 	k = f.Name
-	tag := f.Tag.Get("form")
+	tag := f.Tag.Get("json")
 	if tag == "" {
 		return k, oe
 	}
